@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <title>蛋仔派对艾比查询</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            padding: 10px;
+        }
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        .search-box {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+        }
+        .search-box h1 {
+            text-align: center;
+            color: #ff6767;
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+        .total-count {
+            text-align: center;
+            color: #666;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+        .search-inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .search-inputs input {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 100%;
+            font-size: 15px;
+        }
+        .search-inputs button {
+            padding: 12px;
+            background-color: #ff6767;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        .search-inputs button:hover {
+            background-color: #ff4545;
+        }
+        .result-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+        .aibi-card {
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        /* 艾比主图缩小尺寸 */
+        .aibi-card img.main-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 0 auto 10px;
+            display: block;
+        }
+        .aibi-card h2 {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .aibi-card h2 span {
+            font-size: 13px;
+            color: #999;
+        }
+        .aibi-card .info-item {
+            margin: 6px 0;
+            font-size: 14px;
+            color: #666;
+            line-height: 1.4;
+        }
+        .aibi-card .info-item strong {
+            color: #333;
+        }
+        .aibi-card .img-group {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .aibi-card .img-group .img-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* 超能图标和定位图标（102×30）适配 */
+        .aibi-card .img-group .icon-img img {
+            width: 102px;
+            height: 30px;
+            object-fit: contain;
+            border-radius: 6px;
+        }
+        /* 零食图片（100×120）适配 */
+        .aibi-card .img-group .food-img img {
+            width: 100px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+        .aibi-card .img-group p {
+            font-size: 12px;
+            text-align: center;
+            margin-top: 4px;
+            color: #666;
+        }
+        .no-result {
+            text-align: center;
+            padding: 40px 20px;
+            color: #999;
+            font-size: 15px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .loading {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666;
+            font-size: 15px;
+        }
+        .error {
+            text-align: center;
+            padding: 40px 20px;
+            color: #ff4545;
+            font-size: 15px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        @media (min-width: 500px) {
+            .result-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .search-inputs {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .search-inputs input {
+                flex: 1;
+                min-width: 140px;
+            }
+            .search-inputs button {
+                min-width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="search-box">
+        <h1>蛋仔派对艾比查询</h1>
+        <div class="total-count" id="total-count">已收录艾比：0 个</div>
+        <div class="search-inputs">
+            <input type="text" id="search-id" placeholder="输入序号（如0001）">
+            <input type="text" id="search-name" placeholder="输入名称（如兔萝萝）">
+            <input type="text" id="search-food" placeholder="输入喜爱食物">
+            <input type="text" id="search-element" placeholder="输入元素系别">
+            <input type="text" id="search-attack-type" placeholder="输入攻击类型（物攻/法攻）">
+            <button onclick="searchAibi()">搜索</button>
+            <button onclick="resetSearch()">重置</button>
+        </div>
+    </div>
+
+    <div class="result-list" id="result-container">
+        <div class="loading">正在加载艾比数据...</div>
+    </div>
+</div>
+
+<script>
+let allAibiData = [];
+const scanStart = 1;
+const scanEnd = 100;
+
+function formatId(num) {
+    return num.toString().padStart(4, '0');
+}
+
+window.onload = async function () {
+    try {
+        const scanIds = [];
+        for (let i = scanStart; i <= scanEnd; i++) {
+            scanIds.push(formatId(i));
+        }
+
+        const loadPromises = scanIds.map(async (id) => {
+            try {
+                // 修复JSON路径
+                const res = await fetch(`data/ebby/aibi${id}.json`);
+                if (!res.ok) return null;
+                const data = await res.json();
+                return data;
+            } catch {
+                return null;
+            }
+        });
+
+        const loadedData = await Promise.all(loadPromises);
+        allAibiData = loadedData.filter(item => item !== null);
+        document.getElementById('total-count').textContent = `已收录艾比：${allAibiData.length} 个`;
+        renderAibiList(allAibiData);
+    } catch (error) {
+        document.getElementById('result-container').innerHTML = `<div class="error">数据加载失败</div>`;
+    }
+};
+
+function renderAibiList(data) {
+    const container = document.getElementById('result-container');
+    if (data.length === 0) {
+        container.innerHTML = '<div class="no-result">未找到匹配的艾比</div>';
+        return;
+    }
+
+    let html = '';
+    data.forEach(aibi => {
+        // 所有图片路径直接在这里拼接，不写在JSON里
+        const mainImg = `images/ebby/${aibi.mainImg}`;
+        const elementImg = `images/shuxing/${aibi.elementImg}`;
+        const positionImg = `images/dingwei/${aibi.positionImg}`;
+        const likeFoodImg = `images/lingshi/${aibi.likeFoodImg}`;
+        const hateFoodImg = `images/lingshi/${aibi.hateFoodImg}`;
+
+        html += `
+        <div class="aibi-card">
+            <img src="${mainImg}" alt="${aibi.name}" class="main-img">
+            <h2>${aibi.name} <span>序号：${aibi.id}</span></h2>
+
+            <div class="info-item"><strong>稀有度：</strong>${aibi.rarity}</div>
+            <div class="info-item"><strong>攻击类型：</strong>${aibi.attackType || '未知'}</div>
+            <div class="info-item"><strong>技能：</strong>${aibi.skills}</div>
+            <div class="info-item"><strong>特点：</strong>${aibi.features}</div>
+
+            <div class="img-group">
+                <div class="img-item icon-img">
+                    <img src="${elementImg}" alt="${aibi.element}">
+                    <p>${aibi.element}系</p>
+                </div>
+                <div class="img-item icon-img">
+                    <img src="${positionImg}" alt="${aibi.position}">
+                    <p>${aibi.position}</p>
+                </div>
+                <div class="img-item food-img">
+                    <img src="${likeFoodImg}" alt="喜欢">
+                    <p>喜：${aibi.likeFood}</p>
+                </div>
+                <div class="img-item food-img">
+                    <img src="${hateFoodImg}" alt="讨厌">
+                    <p>厌：${aibi.hateFood}</p>
+                </div>
+            </div>
+
+            <div class="info-item"><strong>获取方式：</strong>${aibi.getWay}</div>
+            ${aibi.tokenWay ? `<div class="info-item"><strong>羁绊信物：</strong>${aibi.tokenWay}</div>` : ''}
+        </div>`;
+    });
+
+    container.innerHTML = html;
+}
+
+function searchAibi() {
+    const searchId = document.getElementById('search-id').value.trim().toLowerCase();
+    const searchName = document.getElementById('search-name').value.trim().toLowerCase();
+    const searchFood = document.getElementById('search-food').value.trim().toLowerCase();
+    const searchElement = document.getElementById('search-element').value.trim().toLowerCase();
+    const searchAttackType = document.getElementById('search-attack-type').value.trim().toLowerCase();
+
+    const filtered = allAibiData.filter(a => {
+        return (searchId === '' || a.id.includes(searchId))
+            && (searchName === '' || a.name.toLowerCase().includes(searchName))
+            && (searchFood === '' || a.likeFood.toLowerCase().includes(searchFood))
+            && (searchElement === '' || a.element.toLowerCase().includes(searchElement))
+            && (searchAttackType === '' || (a.attackType && a.attackType.toLowerCase().includes(searchAttackType)));
+    });
+    renderAibiList(filtered);
+}
+
+function resetSearch() {
+    document.getElementById('search-id').value = '';
+    document.getElementById('search-name').value = '';
+    document.getElementById('search-food').value = '';
+    document.getElementById('search-element').value = '';
+    document.getElementById('search-attack-type').value = '';
+    renderAibiList(allAibiData);
+}
+</script>
+</body>
+</html>
