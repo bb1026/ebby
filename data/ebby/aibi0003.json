@@ -1,0 +1,19 @@
+{
+  "id": "0003",
+  "name": "水捏捏",
+  "skills": "水弹冲击、潮汐护盾、治愈波纹",
+  "features": "治疗辅助、水系续航、护盾保护",
+  "rarity": "稀有",
+  "element": "水",
+  "elementImg": "shui.png",
+  "position": "辅助",
+  "positionImg": "fuzhu.png",
+  "attackType": "法攻",
+  "likeFood": "酸溜溜",
+  "likeFoodImg": "sll.png",
+  "hateFood": "火辣辣",
+  "hateFoodImg": "hll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "小镇或庄园抚摸",
+  "mainImg": "snn.png"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "0008",
+  "name": "弹簧喵",
+  "skills": "弹簧跳跃、重力冲击、范围击飞",
+  "features": "高机动、物理控制、范围击飞",
+  "rarity": "稀有",
+  "element": "普通",
+  "elementImg": "putong.png",
+  "position": "刺客",
+  "positionImg": "cike.png",
+  "attackType": "物攻",
+  "likeFood": "奶呼呼",
+  "likeFoodImg": "nhh.png",
+  "hateFood": "酸溜溜",
+  "hateFoodImg": "sll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "小镇或庄园带着它一起跳",
+  "mainImg": "thm.png"
+}

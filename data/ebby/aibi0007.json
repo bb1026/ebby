@@ -1,0 +1,19 @@
+{
+  "id": "0007",
+  "name": "焦虑鸭",
+  "skills": "焦虑冲击、声波干扰、群体减防",
+  "features": "减益辅助、水系干扰、群体破甲",
+  "rarity": "稀有",
+  "element": "水",
+  "elementImg": "shui.png",
+  "position": "辅助",
+  "positionImg": "fuzhu.png",
+  "attackType": "物攻",
+  "likeFood": "肉香香",
+  "likeFoodImg": "rxx.png",
+  "hateFood": "冰凉凉",
+  "hateFoodImg": "bll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "小镇或庄园点击停留",
+  "mainImg": "jly.png"
+}

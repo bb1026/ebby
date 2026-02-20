@@ -1,0 +1,19 @@
+{
+  "id": "0011",
+  "name": "绿叶蜥",
+  "skills": "绿叶护盾、再生之力、持续治疗",
+  "features": "持续治疗、草系续航、护盾保护",
+  "rarity": "稀有",
+  "element": "草",
+  "elementImg": "cao.png",
+  "position": "辅助",
+  "positionImg": "fuzhu.png",
+  "attackType": "法攻",
+  "likeFood": "苦兮兮",
+  "likeFoodImg": "kxx.png",
+  "hateFood": "甜丝丝",
+  "hateFoodImg": "tss.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "小镇或庄园点击停留",
+  "mainImg": "lyx.png"
+}

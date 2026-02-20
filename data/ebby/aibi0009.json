@@ -1,0 +1,19 @@
+{
+  "id": "0009",
+  "name": "电电蛛",
+  "skills": "电网束缚、雷电冲击、群体麻痹",
+  "features": "控制输出、雷系麻痹、群体控制",
+  "rarity": "稀有",
+  "element": "电",
+  "elementImg": "dian.png",
+  "position": "辅助",
+  "positionImg": "fuzhu.png",
+  "attackType": "法攻",
+  "likeFood": "除了苦兮兮",
+  "likeFoodImg": "nhh.png",
+  "hateFood": "苦兮兮",
+  "hateFoodImg": "kxx.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "小镇或庄园带它跑步",
+  "mainImg": "ddz.png"
+}

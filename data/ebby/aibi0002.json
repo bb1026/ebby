@@ -1,0 +1,19 @@
+{
+  "id": "0002",
+  "name": "爆爆狐",
+  "skills": "爆炎冲击、烈焰溅射、狐火守护",
+  "features": "高爆发、范围伤害、攻速快",
+  "rarity": "稀有",
+  "element": "火",
+  "elementImg": "huo.png",
+  "position": "射手",
+  "positionImg": "sheshou.png",
+  "attackType": "物攻",
+  "likeFood": "火辣辣",
+  "likeFoodImg": "hll.png",
+  "hateFood": "冰凉凉",
+  "hateFoodImg": "bll.png",
+  "getWay": "赛季盲盒、活动获取、商城兑换",
+  "tokenWay": "小镇或庄园点击停留",
+  "mainImg": "bbh.png"
+}

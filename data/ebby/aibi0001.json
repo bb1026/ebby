@@ -1,0 +1,19 @@
+{
+  "id": "0001",
+  "name": "兔萝萝",
+  "skills": "螺旋多肉、飞叶回旋、草叶旋风",
+  "features": "高爆发、草系输出、攻速快、血量中等",
+  "rarity": "稀有",
+  "element": "草",
+  "elementImg": "cao.png",
+  "position": "射手",
+  "positionImg": "sheshou.png",
+  "attackType": "物攻",
+  "likeFood": "苦兮兮",
+  "likeFoodImg": "kxx.png",
+  "hateFood": "肉香香",
+  "hateFoodImg": "rxx.png",
+  "getWay": "赛季盲盒、商城兑换、活动获取",
+  "tokenWay": "设置为农场护卫",
+  "mainImg": "tll.png"
+}

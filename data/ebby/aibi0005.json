@@ -1,0 +1,19 @@
+{
+  "id": "0005",
+  "name": "嗖嗖貂",
+  "skills": "极速突袭、闪电冲刺、暴击增幅",
+  "features": "高攻速、暴击流、雷系输出",
+  "rarity": "稀有",
+  "element": "电",
+  "elementImg": "dian.png",
+  "position": "射手",
+  "positionImg": "sheshou.png",
+  "attackType": "物攻",
+  "likeFood": "酸溜溜",
+  "likeFoodImg": "sll.png",
+  "hateFood": "奶呼呼",
+  "hateFoodImg": "nhh.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "夜晚6点后在小镇抱起",
+  "mainImg": "ssd.png"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "0004",
+  "name": "米亚",
+  "skills": "星光闪耀、治愈之音、群体护盾",
+  "features": "群体治疗、光系辅助、护盾增益",
+  "rarity": "稀有",
+  "element": "光",
+  "elementImg": "guang.png",
+  "position": "辅助",
+  "positionImg": "fuzhu.png",
+  "attackType": "法攻",
+  "likeFood": "奶呼呼",
+  "likeFoodImg": "nhh.png",
+  "hateFood": "苦兮兮",
+  "hateFoodImg": "kxx.png",
+  "getWay": "赛季盲盒、商城兑换",
+  "tokenWay": "小镇或庄园抚摸",
+  "mainImg": "my.png"
+}

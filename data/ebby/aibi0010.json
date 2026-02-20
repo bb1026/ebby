@@ -1,0 +1,19 @@
+{
+  "id": "0010",
+  "name": "冰山龟",
+  "skills": "冰甲守护、寒冰护盾、群体减伤",
+  "features": "高防御、冰系坦克、群体减伤",
+  "rarity": "稀有",
+  "element": "水",
+  "elementImg": "shui.png",
+  "position": "守卫",
+  "positionImg": "shouwei.png",
+  "attackType": "生命&法防",
+  "likeFood": "冰凉凉",
+  "likeFoodImg": "bll.png",
+  "hateFood": "火辣辣",
+  "hateFoodImg": "hll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "小镇或庄园抚摸",
+  "mainImg": "bsg.png"
+}
