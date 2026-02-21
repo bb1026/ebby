@@ -3,22 +3,22 @@
   "favoriteFood": [
     {
       "foodName": "土豆",
-      "image": "images/farm/tudou.png"
+      "image": "tudou.png"
     },
     {
       "foodName": "蘑菇",
-      "image": "images/farm/mogu.png"
+      "image": "mogu.png"
     },
     {
       "foodName": "洋葱",
-      "image": "images/farm/yangcong.png"
+      "image": "yangcong.png"
     }
   ],
   "hateFood": [
     {
       "foodName": "鸡枞菇",
-      "image": "images/farm/jizonggu.png"
+      "image": "jizonggu.png"
     }
   ],
-  "image": "images/farm/taoqiwanzi.png"
+  "image": "taoqiwanzi.png"
 }
