@@ -3,12 +3,12 @@
   "favoriteFood": [
     {
       "foodName": "甜椒",
-      "image": "images/farm/tianjiao.png"
+      "image": "tianjiao.png"
     },
     {
       "foodName": "红辣椒",
-      "image": "images/farm/honglajiao.png"
+      "image": "honglajiao.png"
     }
   ],
-  "image": "images/farm/wanglun.png"
+  "image": "wanglun.png"
 }
