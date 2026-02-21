@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>蛋仔农场图鉴</title>
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:system-ui, -apple-system, sans-serif;
+}
+body{
+  background:#f9fbfc;
+  padding:20px;
+  max-width:700px;
+  margin:0 auto;
+}
+.nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-bottom:24px;
+  position:sticky;
+  top:0;
+  background:#fff;
+  padding:10px;
+  border-radius:12px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.05);
+  z-index:10;
+}
+.nav a{
+  padding:6px 12px;
+  background:#f2f4f5;
+  border-radius:20px;
+  text-decoration:none;
+  color:#333;
+  font-size:14px;
+}
+.nav a:hover{
+  background:#dce8ff;
+}
+.card{
+  background:white;
+  border-radius:20px;
+  padding:24px;
+  margin-bottom:24px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.06);
+  scroll-margin-top:80px;
+}
+/* 角色图片变大 */
+.pet-image{
+  width: 250px;
+  height: 250px;
+  object-fit:contain;
+  display:block;
+  margin:0 auto 20px;
+}
+.name{
+  text-align:center;
+  font-size:24px;
+  font-weight:bold;
+  color:#333;
+  margin-bottom:24px;
+}
+.food-group{
+  margin-bottom:20px;
+}
+.food-title{
+  font-size:16px;
+  font-weight:600;
+  margin-bottom:10px;
+  color:#555;
+}
+.food-list{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+.food-item{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:6px;
+}
+/* 食物图片也变大 */
+.food-image{
+  width: 80px;
+  height: 80px;
+  object-fit:contain;
+  border-radius:12px;
+  background:#f2f4f5;
+  padding:8px;
+}
+.food-name{
+  font-size:14px;
+  color:#444;
+}
+</style>
+</head>
+<body>
+
+<div class="nav" id="nav">
+  <!-- 新增：艾比查询链接 -->
+  <a href="index.html" style="background: #4285f4; color: white; font-weight: 500;">艾比查询</a>
+</div>
+<div id="content"></div>
+
+<script>
+// 读取 data/farm 目录，自动获取所有 json
+async function getDataFileList() {
+  try {
+    const res = await fetch('data/farm/');
+    const text = await res.text();
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(text, 'text/html');
+    const links = doc.querySelectorAll('a');
+    const jsonFiles = Array.from(links)
+      .map(a => a.textContent.trim())
+      .filter(name => name.endsWith('.json'));
+    return jsonFiles;
+  } catch (e) {
+    console.error('无法读取目录，改用手动列表');
+    return [];
+  }
+}
+
+// 加载单个json
+async function loadPet(jsonFile) {
+  const id = jsonFile.replace('.json', '');
+  try {
+    const res = await fetch(`data/farm/${jsonFile}`);
+    const data = await res.json();
+    return { id, data };
+  } catch (err) {
+    console.error('加载失败', jsonFile);
+    return null;
+  }
+}
+
+// 渲染全部
+async function init() {
+  const jsonFiles = await getDataFileList();
+  if (!jsonFiles.length) return;
+
+  const nav = document.getElementById('nav');
+  const content = document.getElementById('content');
+
+  const pets = (await Promise.all(jsonFiles.map(loadPet))).filter(Boolean);
+
+  // 生成导航
+  pets.forEach(({ id, data }) => {
+    const a = document.createElement('a');
+    a.href = `#${id}`;
+    a.textContent = data.name || id;
+    nav.appendChild(a);
+  });
+
+  // 生成卡片
+  pets.forEach(({ id, data }) => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.id = id;
+
+    if (data.image) {
+      card.innerHTML += `<img class="pet-image" src="${data.image}" alt="">`;
+    }
+
+    if (data.name) {
+      card.innerHTML += `<div class="name">${data.name}</div>`;
+    }
+
+    // 喜欢食物
+    if (data.favoriteFood?.length) {
+      let html = `<div class="food-group"><div class="food-title">🥰 喜欢吃</div><div class="food-list">`;
+      data.favoriteFood.forEach(f => {
+        if (f.foodName && f.image) {
+          html += `
+            <div class="food-item">
+              <img class="food-image" src="${f.image}">
+              <div class="food-name">${f.foodName}</div>
+            </div>`;
+        }
+      });
+      html += `</div></div>`;
+      card.innerHTML += html;
+    }
+
+    // 讨厌食物
+    if (data.hateFood?.length) {
+      let html = `<div class="food-group"><div class="food-title">😖 讨厌吃</div><div class="food-list">`;
+      data.hateFood.forEach(f => {
+        if (f.foodName && f.image) {
+          html += `
+            <div class="food-item">
+              <img class="food-image" src="${f.image}">
+              <div class="food-name">${f.foodName}</div>
+            </div>`;
+        }
+      });
+      html += `</div></div>`;
+      card.innerHTML += html;
+    }
+
+    content.appendChild(card);
+  });
+}
+
+init();
+</script>
+</body>
+</html>
