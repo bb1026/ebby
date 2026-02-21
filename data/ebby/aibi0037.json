@@ -1,0 +1,19 @@
+{
+  "id": "0037",
+  "name": "海兰蒂斯",
+  "skills": "海神冲击、潮汐护盾、群体减伤",
+  "features": "高防御、水系坦克、护盾保护",
+  "rarity": "稀有",
+  "element": "水",
+  "elementImg": "shui.png",
+  "position": "坦克",
+  "positionImg": "tanke.png",
+  "attackType": "物攻",
+  "likeFood": "冰凉凉",
+  "likeFoodImg": "bll.png",
+  "hateFood": "火辣辣",
+  "hateFoodImg": "hll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "地图海底遗迹蹓跶掉落",
+  "mainImg": "hlts.png"
+}

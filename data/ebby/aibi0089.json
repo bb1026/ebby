@@ -1,0 +1,19 @@
+{
+  "id": "0089",
+  "name": "羞羞糖球",
+  "skills": "羞羞冲击、糖盾护盾、群体减伤",
+  "features": "高防御、无系坦克、护盾保护",
+  "rarity": "稀有",
+  "element": "无",
+  "elementImg": "wu.png",
+  "position": "坦克",
+  "positionImg": "tanke.png",
+  "attackType": "物攻",
+  "likeFood": "甜丝丝",
+  "likeFoodImg": "tss.png",
+  "hateFood": "酸溜溜",
+  "hateFoodImg": "sll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "喂食甜丝丝，小镇带着艾比跑",
+  "mainImg": "xxtq.png"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "0091",
+  "name": "暴龙虾饺",
+  "skills": "暴龙冲击、破甲之刃、暴击增幅",
+  "features": "高爆发、水系输出、破甲流",
+  "rarity": "稀有",
+  "element": "水",
+  "elementImg": "shui.png",
+  "position": "战士",
+  "positionImg": "zhanshi.png",
+  "attackType": "物攻",
+  "likeFood": "肉香香",
+  "likeFoodImg": "rxx.png",
+  "hateFood": "冰凉凉",
+  "hateFoodImg": "bll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "喂食肉香香，小镇与其他艾比PK",
+  "mainImg": "blxj.png"
+}

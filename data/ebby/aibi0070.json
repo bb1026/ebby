@@ -1,0 +1,19 @@
+{
+  "id": "0070",
+  "name": "霜糖蛤蜊",
+  "skills": "霜糖冲击、冰甲护盾、群体减伤",
+  "features": "高防御、冰系坦克、护盾保护",
+  "rarity": "稀有",
+  "element": "冰",
+  "elementImg": "bing.png",
+  "position": "坦克",
+  "positionImg": "tanke.png",
+  "attackType": "物攻",
+  "likeFood": "苦兮兮",
+  "likeFoodImg": "kxx.png",
+  "hateFood": "甜丝丝",
+  "hateFoodImg": "tss.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "喂食苦兮兮，与其他蛤蜊在一起",
+  "mainImg": "stgl.png"
+}

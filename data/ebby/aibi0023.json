@@ -1,0 +1,19 @@
+{
+  "id": "0023",
+  "name": "希利亚斯",
+  "skills": "暗影冲击、灵魂收割、群体吸血",
+  "features": "吸血输出、暗系续航、群体减益",
+  "rarity": "稀有",
+  "element": "暗",
+  "elementImg": "an.png",
+  "position": "输出",
+  "positionImg": "shuchu.png",
+  "attackType": "物攻",
+  "likeFood": "酸溜溜",
+  "likeFoodImg": "sll.png",
+  "hateFood": "奶呼呼",
+  "hateFoodImg": "nhh.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "小镇或庄园挂机，艾比头上出现气泡需求，正确满足三次",
+  "mainImg": "xlys.png"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "0014",
+  "name": "炸毛驼",
+  "skills": "沙尘冲击、沙漠护盾、群体减伤",
+  "features": "高防御、土系坦克、护盾保护",
+  "rarity": "稀有",
+  "element": "土",
+  "elementImg": "tu.png",
+  "position": "坦克",
+  "positionImg": "tanke.png",
+  "attackType": "物攻",
+  "likeFood": "干巴巴",
+  "likeFoodImg": "gbb.png",
+  "hateFood": "甜丝丝",
+  "hateFoodImg": "tss.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "小镇或庄园抚摸",
+  "mainImg": "zmt.png"
+}

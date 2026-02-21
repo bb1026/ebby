@@ -1,0 +1,19 @@
+{
+  "id": "0022",
+  "name": "睡袋熊",
+  "skills": "睡眠护盾、梦境治愈、群体减伤",
+  "features": "高防御、无系坦克、护盾保护",
+  "rarity": "稀有",
+  "element": "无",
+  "elementImg": "wu.png",
+  "position": "坦克",
+  "positionImg": "tanke.png",
+  "attackType": "物攻",
+  "likeFood": "甜丝丝",
+  "likeFoodImg": "tss.png",
+  "hateFood": "酸溜溜",
+  "hateFoodImg": "sll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "小镇或庄园抚摸",
+  "mainImg": "sdx.png"
+}

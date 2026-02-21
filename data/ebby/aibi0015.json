@@ -1,0 +1,19 @@
+{
+  "id": "0015",
+  "name": "恶魔喵咪",
+  "skills": "暗影冲击、恐惧咆哮、群体减益",
+  "features": "减益输出、暗系干扰、群体恐惧",
+  "rarity": "稀有",
+  "element": "暗",
+  "elementImg": "an.png",
+  "position": "输出",
+  "positionImg": "shuchu.png",
+  "attackType": "物攻",
+  "likeFood": "奶呼呼",
+  "likeFoodImg": "nhh.png",
+  "hateFood": "苦兮兮",
+  "hateFoodImg": "kxx.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "夜晚6点后小镇或庄园点击停留",
+  "mainImg": "emm.png"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "0024",
+  "name": "咖啡水母",
+  "skills": "咖啡冲击、提神增幅、群体加速",
+  "features": "群体加速、水系辅助、输出增益",
+  "rarity": "稀有",
+  "element": "水",
+  "elementImg": "shui.png",
+  "position": "辅助",
+  "positionImg": "fuzhu.png",
+  "attackType": "法攻",
+  "likeFood": "苦兮兮",
+  "likeFoodImg": "kxx.png",
+  "hateFood": "甜丝丝",
+  "hateFoodImg": "tss.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "小镇或庄园重复点击提神",
+  "mainImg": "kfsm.png"
+}

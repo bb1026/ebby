@@ -1,0 +1,19 @@
+{
+  "id": "0083",
+  "name": "海苔猪",
+  "skills": "海苔冲击、水弹护盾、群体减伤",
+  "features": "高防御、水系坦克、护盾保护",
+  "rarity": "稀有",
+  "element": "水",
+  "elementImg": "shui.png",
+  "position": "坦克",
+  "positionImg": "tanke.png",
+  "attackType": "物攻",
+  "likeFood": "冰凉凉",
+  "likeFoodImg": "bll.png",
+  "hateFood": "火辣辣",
+  "hateFoodImg": "hll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "喂食冰凉凉，小镇或庄园抚摸",
+  "mainImg": "htz.png"
+}

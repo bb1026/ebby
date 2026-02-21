@@ -1,0 +1,19 @@
+{
+  "id": "0044",
+  "name": "锤头獾",
+  "skills": "锤头冲击、破甲之刃、暴击增幅",
+  "features": "高爆发、土系输出、破甲流",
+  "rarity": "稀有",
+  "element": "土",
+  "elementImg": "tu.png",
+  "position": "战士",
+  "positionImg": "zhanshi.png",
+  "attackType": "物攻",
+  "likeFood": "肉香香",
+  "likeFoodImg": "rxx.png",
+  "hateFood": "冰凉凉",
+  "hateFoodImg": "bll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "放置地雷让艾比锤",
+  "mainImg": "cth.png"
+}

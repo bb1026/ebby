@@ -1,0 +1,19 @@
+{
+  "id": "0039",
+  "name": "蛇尾犬",
+  "skills": "蛇尾冲击、毒液之刃、持续伤害",
+  "features": "持续伤害、暗系输出、DOT流",
+  "rarity": "稀有",
+  "element": "暗",
+  "elementImg": "an.png",
+  "position": "战士",
+  "positionImg": "zhanshi.png",
+  "attackType": "物攻",
+  "likeFood": "奶呼呼",
+  "likeFoodImg": "nhh.png",
+  "hateFood": "苦兮兮",
+  "hateFoodImg": "kxx.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "进入地图喂薄荷果",
+  "mainImg": "swq.png"
+}

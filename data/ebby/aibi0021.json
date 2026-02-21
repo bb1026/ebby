@@ -1,0 +1,19 @@
+{
+  "id": "0021",
+  "name": "火辣鸡",
+  "skills": "火焰冲刺、烈焰冲击、暴击增幅",
+  "features": "高爆发、火系输出、暴击流",
+  "rarity": "稀有",
+  "element": "火",
+  "elementImg": "huo.png",
+  "position": "射手",
+  "positionImg": "sheshou.png",
+  "attackType": "物攻",
+  "likeFood": "冰凉凉",
+  "likeFoodImg": "bll.png",
+  "hateFood": "火辣辣",
+  "hateFoodImg": "hll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "小镇或庄园跑步",
+  "mainImg": "hlj.png"
+}

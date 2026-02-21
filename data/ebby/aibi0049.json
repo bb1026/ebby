@@ -1,0 +1,19 @@
+{
+  "id": "0049",
+  "name": "阿罗斯",
+  "skills": "龙源冲击、龙鳞护盾、群体增益",
+  "features": "群体增益、龙系辅助、治疗输出",
+  "rarity": "稀有",
+  "element": "龙",
+  "elementImg": "long.png",
+  "position": "辅助",
+  "positionImg": "fuzhu.png",
+  "attackType": "法攻",
+  "likeFood": "冰凉凉",
+  "likeFoodImg": "bll.png",
+  "hateFood": "火辣辣",
+  "hateFoodImg": "hll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "龙源之域过往最高的云朵处",
+  "mainImg": "als.png"
+}

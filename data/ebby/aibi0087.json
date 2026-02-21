@@ -1,0 +1,19 @@
+{
+  "id": "0087",
+  "name": "薯沙鳗",
+  "skills": "薯沙冲击、破甲之刃、暴击增幅",
+  "features": "高爆发、土系输出、破甲流",
+  "rarity": "稀有",
+  "element": "土",
+  "elementImg": "tu.png",
+  "position": "战士",
+  "positionImg": "zhanshi.png",
+  "attackType": "物攻",
+  "likeFood": "干巴巴",
+  "likeFoodImg": "gbb.png",
+  "hateFood": "奶呼呼",
+  "hateFoodImg": "nhh.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "喂食干巴巴，炙烤肉肉山岩浆泡澡获得",
+  "mainImg": "ssm.png"
+}

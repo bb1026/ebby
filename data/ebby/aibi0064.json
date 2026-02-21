@@ -1,0 +1,19 @@
+{
+  "id": "0064",
+  "name": "暖暖犀牛",
+  "skills": "暖暖冲击、火焰护盾、群体灼烧",
+  "features": "高防御、火系坦克、持续伤害",
+  "rarity": "稀有",
+  "element": "火",
+  "elementImg": "huo.png",
+  "position": "坦克",
+  "positionImg": "tanke.png",
+  "attackType": "物攻",
+  "likeFood": "火辣辣",
+  "likeFoodImg": "hll.png",
+  "hateFood": "冰凉凉",
+  "hateFoodImg": "bll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "喂食火辣辣，与火山龟、熔岩巨人跳舞",
+  "mainImg": "nnxn.png"
+}

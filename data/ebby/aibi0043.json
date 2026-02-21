@@ -1,0 +1,19 @@
+{
+  "id": "0043",
+  "name": "尖果鸟",
+  "skills": "尖果冲击、破甲之刃、暴击增幅",
+  "features": "高爆发、草系输出、破甲流",
+  "rarity": "稀有",
+  "element": "草",
+  "elementImg": "cao.png",
+  "position": "射手",
+  "positionImg": "sheshou.png",
+  "attackType": "物攻",
+  "likeFood": "奶呼呼",
+  "likeFoodImg": "nhh.png",
+  "hateFood": "酸溜溜",
+  "hateFoodImg": "sll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "设置成农场助手",
+  "mainImg": "jgn.png"
+}

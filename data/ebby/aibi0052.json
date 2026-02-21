@@ -1,0 +1,19 @@
+{
+  "id": "0052",
+  "name": "吞吞兽",
+  "skills": "吞吞冲击、吞噬护盾、群体减伤",
+  "features": "高防御、无系坦克、护盾保护",
+  "rarity": "稀有",
+  "element": "无",
+  "elementImg": "wu.png",
+  "position": "坦克",
+  "positionImg": "tanke.png",
+  "attackType": "物攻",
+  "likeFood": "酸溜溜",
+  "likeFoodImg": "sll.png",
+  "hateFood": "甜丝丝",
+  "hateFoodImg": "tss.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "重复点击吞吞",
+  "mainImg": "tts.png"
+}

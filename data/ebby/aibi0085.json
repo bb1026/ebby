@@ -1,0 +1,19 @@
+{
+  "id": "0085",
+  "name": "极电鸟",
+  "skills": "极电冲击、雷电护盾、群体麻痹",
+  "features": "控制输出、雷系干扰、群体麻痹",
+  "rarity": "稀有",
+  "element": "电",
+  "elementImg": "dian.png",
+  "position": "输出",
+  "positionImg": "shuchu.png",
+  "attackType": "法攻",
+  "likeFood": "干巴巴",
+  "likeFoodImg": "gbb.png",
+  "hateFood": "奶呼呼",
+  "hateFoodImg": "nhh.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "喂食干巴巴，与其他极电鸟在一起斗舞",
+  "mainImg": "jdn.png"
+}

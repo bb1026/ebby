@@ -1,0 +1,19 @@
+{
+  "id": "0054",
+  "name": "奶龙",
+  "skills": "奶龙冲击、龙鳞护盾、群体增益",
+  "features": "群体增益、龙系辅助、治疗输出",
+  "rarity": "稀有",
+  "element": "龙",
+  "elementImg": "long.png",
+  "position": "辅助",
+  "positionImg": "fuzhu.png",
+  "attackType": "法攻",
+  "likeFood": "都喜欢",
+  "likeFoodImg": "dxh.png",
+  "hateFood": "无",
+  "hateFoodImg": "wu.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "都喜欢，每种零食各喂三次",
+  "mainImg": "nl.png"
+}

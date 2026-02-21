@@ -1,0 +1,19 @@
+{
+  "id": "0050",
+  "name": "光球鼠",
+  "skills": "光球冲击、光盾护盾、群体增益",
+  "features": "群体增益、光系辅助、治疗输出",
+  "rarity": "稀有",
+  "element": "光",
+  "elementImg": "guang.png",
+  "position": "辅助",
+  "positionImg": "fuzhu.png",
+  "attackType": "法攻",
+  "likeFood": "干巴巴",
+  "likeFoodImg": "gbb.png",
+  "hateFood": "奶呼呼",
+  "hateFoodImg": "nhh.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "小镇收放艾比，按提示寻找物品，三次后获得",
+  "mainImg": "gqs.png"
+}

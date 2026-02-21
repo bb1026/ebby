@@ -1,0 +1,19 @@
+{
+  "id": "0056",
+  "name": "白菜狗",
+  "skills": "白菜冲击、蔬菜护盾、群体减伤",
+  "features": "高防御、草系坦克、护盾保护",
+  "rarity": "稀有",
+  "element": "草",
+  "elementImg": "cao.png",
+  "position": "坦克",
+  "positionImg": "tanke.png",
+  "attackType": "物攻",
+  "likeFood": "奶呼呼",
+  "likeFoodImg": "nhh.png",
+  "hateFood": "苦兮兮",
+  "hateFoodImg": "kxx.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "种白菜狗种子，设置白菜狗为农场助手，作物成熟白菜狗会钻到土里，拔出获得",
+  "mainImg": "bcg.png"
+}

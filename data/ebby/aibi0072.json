@@ -1,0 +1,19 @@
+{
+  "id": "0072",
+  "name": "奥布",
+  "skills": "奥布冲击、暗影护盾、群体减益",
+  "features": "减益输出、暗系干扰、群体恐惧",
+  "rarity": "稀有",
+  "element": "暗",
+  "elementImg": "an.png",
+  "position": "输出",
+  "positionImg": "shuchu.png",
+  "attackType": "法攻",
+  "likeFood": "冰凉凉",
+  "likeFoodImg": "bll.png",
+  "hateFood": "火辣辣",
+  "hateFoodImg": "hll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "喂食冰凉凉，小镇或庄园挂机，艾比头上出现气泡需求，正确满足三次",
+  "mainImg": "ab.png"
+}

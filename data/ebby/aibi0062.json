@@ -1,0 +1,19 @@
+{
+  "id": "0062",
+  "name": "枫洛可",
+  "skills": "枫洛冲击、火焰护盾、群体灼烧",
+  "features": "持续伤害、火系输出、DOT流",
+  "rarity": "稀有",
+  "element": "火",
+  "elementImg": "huo.png",
+  "position": "输出",
+  "positionImg": "shuchu.png",
+  "attackType": "法攻",
+  "likeFood": "火辣辣",
+  "likeFoodImg": "hll.png",
+  "hateFood": "冰凉凉",
+  "hateFoodImg": "bll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "喂食火辣辣，阿罗斯和枫洛可一起在圣辉林地水池边逛一逛",
+  "mainImg": "flk.png"
+}

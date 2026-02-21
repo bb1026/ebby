@@ -1,0 +1,19 @@
+{
+  "id": "0057",
+  "name": "向日葵电狸",
+  "skills": "向日冲击、雷电护盾、群体麻痹",
+  "features": "控制输出、雷系干扰、群体麻痹",
+  "rarity": "稀有",
+  "element": "电",
+  "elementImg": "dian.png",
+  "position": "输出",
+  "positionImg": "shuchu.png",
+  "attackType": "法攻",
+  "likeFood": "干巴巴",
+  "likeFoodImg": "gbb.png",
+  "hateFood": "奶呼呼",
+  "hateFoodImg": "nhh.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "白天在小镇晒太阳",
+  "mainImg": "xrkdl.png"
+}

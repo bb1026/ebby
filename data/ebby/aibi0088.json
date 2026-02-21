@@ -1,0 +1,19 @@
+{
+  "id": "0088",
+  "name": "蛛蛛糕",
+  "skills": "蛛蛛冲击、破甲之刃、暴击增幅",
+  "features": "高爆发、无系输出、破甲流",
+  "rarity": "稀有",
+  "element": "无",
+  "elementImg": "wu.png",
+  "position": "战士",
+  "positionImg": "zhanshi.png",
+  "attackType": "物攻",
+  "likeFood": "甜丝丝",
+  "likeFoodImg": "tss.png",
+  "hateFood": "酸溜溜",
+  "hateFoodImg": "sll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "喂食甜丝丝，在有其他艾比时抱起",
+  "mainImg": "zzg.png"
+}

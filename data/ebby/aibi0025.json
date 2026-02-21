@@ -1,0 +1,19 @@
+{
+  "id": "0025",
+  "name": "眠眠云",
+  "skills": "梦境护盾、睡眠冲击、群体眩晕",
+  "features": "控制辅助、无系干扰、群体眩晕",
+  "rarity": "稀有",
+  "element": "无",
+  "elementImg": "wu.png",
+  "position": "控制",
+  "positionImg": "kongzhi.png",
+  "attackType": "法攻",
+  "likeFood": "甜丝丝",
+  "likeFoodImg": "tss.png",
+  "hateFood": "苦兮兮",
+  "hateFoodImg": "kxx.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "凌晨0点听悲伤的歌曲",
+  "mainImg": "mmy.png"
+}

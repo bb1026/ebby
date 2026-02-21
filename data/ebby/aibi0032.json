@@ -1,0 +1,19 @@
+{
+  "id": "0032",
+  "name": "丧丧苔球",
+  "skills": "丧丧冲击、枯萎护盾、持续伤害",
+  "features": "持续伤害、草系输出、DOT流",
+  "rarity": "稀有",
+  "element": "草",
+  "elementImg": "cao.png",
+  "position": "输出",
+  "positionImg": "shuchu.png",
+  "attackType": "法攻",
+  "likeFood": "苦兮兮",
+  "likeFoodImg": "kxx.png",
+  "hateFood": "甜丝丝",
+  "hateFoodImg": "tss.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "小镇或庄园夜晚抚摸，钻进土里拔出来，反复几次",
+  "mainImg": "sstq.png"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "0018",
+  "name": "艾思灵",
+  "skills": "灵魂之歌、精神冲击、群体增益",
+  "features": "群体增益、光系辅助、治疗输出",
+  "rarity": "稀有",
+  "element": "光",
+  "elementImg": "guang.png",
+  "position": "辅助",
+  "positionImg": "fuzhu.png",
+  "attackType": "法攻",
+  "likeFood": "肉香香",
+  "likeFoodImg": "rxx.png",
+  "hateFood": "苦兮兮",
+  "hateFoodImg": "kxx.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "床上躺下睡觉，听它唱歌",
+  "mainImg": "asl.png"
+}

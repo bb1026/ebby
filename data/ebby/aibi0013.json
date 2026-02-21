@@ -1,0 +1,19 @@
+{
+  "id": "0013",
+  "name": "石灵巨人",
+  "skills": "岩石壁垒、大地冲击、群体眩晕",
+  "features": "高防御、土系坦克、群体控制",
+  "rarity": "稀有",
+  "element": "土",
+  "elementImg": "tu.png",
+  "position": "坦克",
+  "positionImg": "tanke.png",
+  "attackType": "物攻",
+  "likeFood": "干巴巴",
+  "likeFoodImg": "gbb.png",
+  "hateFood": "奶呼呼",
+  "hateFoodImg": "nhh.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "喂食干巴巴",
+  "mainImg": "sljr.png"
+}

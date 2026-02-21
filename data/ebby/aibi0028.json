@@ -1,0 +1,19 @@
+{
+  "id": "0028",
+  "name": "陆行鲨",
+  "skills": "陆地冲击、撕裂之刃、持续伤害",
+  "features": "持续伤害、水系输出、DOT流",
+  "rarity": "稀有",
+  "element": "水",
+  "elementImg": "shui.png",
+  "position": "战士",
+  "positionImg": "zhanshi.png",
+  "attackType": "物攻",
+  "likeFood": "甜丝丝",
+  "likeFoodImg": "tss.png",
+  "hateFood": "苦兮兮",
+  "hateFoodImg": "kxx.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "喂食甜丝丝",
+  "mainImg": "lxsh.png"
+}

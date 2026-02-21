@@ -1,0 +1,19 @@
+{
+  "id": "0042",
+  "name": "魔音沙鳗",
+  "skills": "魔音冲击、声波干扰、群体减益",
+  "features": "减益辅助、土系干扰、群体破甲",
+  "rarity": "稀有",
+  "element": "土",
+  "elementImg": "tu.png",
+  "position": "辅助",
+  "positionImg": "fuzhu.png",
+  "attackType": "法攻",
+  "likeFood": "冰凉凉",
+  "likeFoodImg": "bll.png",
+  "hateFood": "火辣辣",
+  "hateFoodImg": "hll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "用乐器演奏音乐",
+  "mainImg": "mysm.png"
+}

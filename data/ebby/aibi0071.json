@@ -1,0 +1,19 @@
+{
+  "id": "0071",
+  "name": "软糖熊",
+  "skills": "软糖冲击、糖盾护盾、群体减伤",
+  "features": "高防御、无系坦克、护盾保护",
+  "rarity": "稀有",
+  "element": "无",
+  "elementImg": "wu.png",
+  "position": "坦克",
+  "positionImg": "tanke.png",
+  "attackType": "物攻",
+  "likeFood": "甜丝丝",
+  "likeFoodImg": "tss.png",
+  "hateFood": "酸溜溜",
+  "hateFoodImg": "sll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "喂食甜丝丝，小镇举起，对话选择“拥抱类”相关内容即可",
+  "mainImg": "rtx.png"
+}

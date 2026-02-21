@@ -1,0 +1,19 @@
+{
+  "id": "0053",
+  "name": "影蛛台",
+  "skills": "影蛛冲击、暗影之刃、持续伤害",
+  "features": "持续伤害、暗系输出、DOT流",
+  "rarity": "稀有",
+  "element": "暗",
+  "elementImg": "an.png",
+  "position": "输出",
+  "positionImg": "shuchu.png",
+  "attackType": "物攻",
+  "likeFood": "冰凉凉",
+  "likeFoodImg": "bll.png",
+  "hateFood": "火辣辣",
+  "hateFoodImg": "hll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "小镇或庄园夜晚6点后停留",
+  "mainImg": "yzt.png"
+}

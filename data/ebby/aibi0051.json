@@ -1,0 +1,19 @@
+{
+  "id": "0051",
+  "name": "蜜罐雄蜂",
+  "skills": "蜜罐冲击、治愈波纹、群体治疗",
+  "features": "群体治疗、草系辅助、护盾保护",
+  "rarity": "稀有",
+  "element": "草",
+  "elementImg": "cao.png",
+  "position": "辅助",
+  "positionImg": "fuzhu.png",
+  "attackType": "法攻",
+  "likeFood": "甜丝丝",
+  "likeFoodImg": "tss.png",
+  "hateFood": "酸溜溜",
+  "hateFoodImg": "sll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "设置为农场助手，种植花类",
+  "mainImg": "mgxf.png"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "0060",
+  "name": "星云狮",
+  "skills": "星云冲击、星尘护盾、群体增益",
+  "features": "群体增益、光系辅助、治疗输出",
+  "rarity": "稀有",
+  "element": "光",
+  "elementImg": "guang.png",
+  "position": "辅助",
+  "positionImg": "fuzhu.png",
+  "attackType": "法攻",
+  "likeFood": "冰凉凉",
+  "likeFoodImg": "bll.png",
+  "hateFood": "火辣辣",
+  "hateFoodImg": "hll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "喂食冰凉凉，在小镇占卜几次获得",
+  "mainImg": "xys.png"
+}

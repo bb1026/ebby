@@ -1,0 +1,19 @@
+{
+  "id": "0086",
+  "name": "辣辣蛤蜊",
+  "skills": "辣辣冲击、火焰护盾、群体灼烧",
+  "features": "高防御、火系坦克、持续伤害",
+  "rarity": "稀有",
+  "element": "火",
+  "elementImg": "huo.png",
+  "position": "坦克",
+  "positionImg": "tanke.png",
+  "attackType": "物攻",
+  "likeFood": "火辣辣",
+  "likeFoodImg": "hll.png",
+  "hateFood": "冰凉凉",
+  "hateFoodImg": "bll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "喂食火辣辣，与其他蛤蜊在一起",
+  "mainImg": "llgl.png"
+}

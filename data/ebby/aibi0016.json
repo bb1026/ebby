@@ -1,0 +1,19 @@
+{
+  "id": "0016",
+  "name": "萤火蜗",
+  "skills": "荧光护盾、微光治愈、群体照明",
+  "features": "辅助照明、光系续航、护盾保护",
+  "rarity": "稀有",
+  "element": "光",
+  "elementImg": "guang.png",
+  "position": "辅助",
+  "positionImg": "fuzhu.png",
+  "attackType": "法攻",
+  "likeFood": "冰凉凉",
+  "likeFoodImg": "bll.png",
+  "hateFood": "火辣辣",
+  "hateFoodImg": "hll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "三只萤火蜗聚在一起",
+  "mainImg": "yhw.png"
+}

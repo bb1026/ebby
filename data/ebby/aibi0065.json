@@ -1,0 +1,19 @@
+{
+  "id": "0065",
+  "name": "爆柠蛙",
+  "skills": "爆柠冲击、毒液之刃、持续伤害",
+  "features": "持续伤害、水系输出、DOT流",
+  "rarity": "稀有",
+  "element": "水",
+  "elementImg": "shui.png",
+  "position": "输出",
+  "positionImg": "shuchu.png",
+  "attackType": "法攻",
+  "likeFood": "酸溜溜",
+  "likeFoodImg": "sll.png",
+  "hateFood": "甜丝丝",
+  "hateFoodImg": "tss.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "喂食酸溜溜，小镇或庄园抚摸",
+  "mainImg": "bnw.png"
+}

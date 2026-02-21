@@ -1,0 +1,19 @@
+{
+  "id": "0034",
+  "name": "蛮拳章鱼",
+  "skills": "蛮拳冲击、破甲之刃、暴击增幅",
+  "features": "高爆发、水系输出、破甲流",
+  "rarity": "稀有",
+  "element": "水",
+  "elementImg": "shui.png",
+  "position": "战士",
+  "positionImg": "zhanshi.png",
+  "attackType": "物攻",
+  "likeFood": "肉香香",
+  "likeFoodImg": "rxx.png",
+  "hateFood": "冰凉凉",
+  "hateFoodImg": "bll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "小镇擂台赛赢三次",
+  "mainImg": "mqzy.png"
+}

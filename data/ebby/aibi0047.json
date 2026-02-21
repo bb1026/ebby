@@ -1,0 +1,19 @@
+{
+  "id": "0047",
+  "name": "幽灵浣熊",
+  "skills": "幽灵冲击、暗影护盾、群体减益",
+  "features": "减益输出、暗系干扰、群体恐惧",
+  "rarity": "稀有",
+  "element": "暗",
+  "elementImg": "an.png",
+  "position": "输出",
+  "positionImg": "shuchu.png",
+  "attackType": "物攻",
+  "likeFood": "冰凉凉",
+  "likeFoodImg": "bll.png",
+  "hateFood": "火辣辣",
+  "hateFoodImg": "hll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "对艾比发哭哭表情",
+  "mainImg": "ylhx.png"
+}

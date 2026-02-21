@@ -1,0 +1,19 @@
+{
+  "id": "0078",
+  "name": "甜筒橙橙",
+  "skills": "甜筒冲击、冰甲护盾、群体减伤",
+  "features": "高防御、冰系坦克、护盾保护",
+  "rarity": "稀有",
+  "element": "冰",
+  "elementImg": "bing.png",
+  "position": "坦克",
+  "positionImg": "tanke.png",
+  "attackType": "物攻",
+  "likeFood": "冰凉凉",
+  "likeFoodImg": "bll.png",
+  "hateFood": "火辣辣",
+  "hateFoodImg": "hll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "喂食冰凉凉，与其他橙橙在一起",
+  "mainImg": "ttcc.png"
+}

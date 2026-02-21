@@ -1,0 +1,19 @@
+{
+  "id": "0079",
+  "name": "甜筒莓莓",
+  "skills": "甜筒冲击、冰甲护盾、群体减伤",
+  "features": "高防御、冰系坦克、护盾保护",
+  "rarity": "稀有",
+  "element": "冰",
+  "elementImg": "bing.png",
+  "position": "坦克",
+  "positionImg": "tanke.png",
+  "attackType": "物攻",
+  "likeFood": "甜丝丝",
+  "likeFoodImg": "tss.png",
+  "hateFood": "酸溜溜",
+  "hateFoodImg": "sll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "喂食甜丝丝，与其他莓莓在一起",
+  "mainImg": "ttmm.png"
+}

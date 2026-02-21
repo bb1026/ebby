@@ -1,0 +1,19 @@
+{
+  "id": "0080",
+  "name": "荔墩墩",
+  "skills": "荔墩冲击、破甲之刃、暴击增幅",
+  "features": "高爆发、草系输出、破甲流",
+  "rarity": "稀有",
+  "element": "草",
+  "elementImg": "cao.png",
+  "position": "战士",
+  "positionImg": "zhanshi.png",
+  "attackType": "物攻",
+  "likeFood": "冰凉凉",
+  "likeFoodImg": "bll.png",
+  "hateFood": "火辣辣",
+  "hateFoodImg": "hll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "喂食冰凉凉，小镇带着艾比走一会儿获得",
+  "mainImg": "ldd.png"
+}

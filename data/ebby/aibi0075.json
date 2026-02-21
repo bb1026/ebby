@@ -1,0 +1,19 @@
+{
+  "id": "0075",
+  "name": "苹果鹈鹕",
+  "skills": "苹果冲击、破甲之刃、暴击增幅",
+  "features": "高爆发、草系输出、破甲流",
+  "rarity": "稀有",
+  "element": "草",
+  "elementImg": "cao.png",
+  "position": "射手",
+  "positionImg": "sheshou.png",
+  "attackType": "物攻",
+  "likeFood": "酸溜溜",
+  "likeFoodImg": "sll.png",
+  "hateFood": "甜丝丝",
+  "hateFoodImg": "tss.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "喂食酸溜溜，在巨大苹果树下停留获得",
+  "mainImg": "pgth.png"
+}

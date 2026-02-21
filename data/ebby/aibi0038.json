@@ -1,0 +1,19 @@
+{
+  "id": "0038",
+  "name": "贝雷塔",
+  "skills": "贝雷冲击、破甲之刃、暴击增幅",
+  "features": "高爆发、无系输出、破甲流",
+  "rarity": "稀有",
+  "element": "无",
+  "elementImg": "wu.png",
+  "position": "射手",
+  "positionImg": "sheshou.png",
+  "attackType": "物攻",
+  "likeFood": "干巴巴",
+  "likeFoodImg": "gbb.png",
+  "hateFood": "奶呼呼",
+  "hateFoodImg": "nhh.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "小镇擂台赛赢三次",
+  "mainImg": "blt.png"
+}

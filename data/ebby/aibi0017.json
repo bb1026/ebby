@@ -1,0 +1,19 @@
+{
+  "id": "0017",
+  "name": "花果猪",
+  "skills": "果实冲击、花果护盾、持续治疗",
+  "features": "持续治疗、草系续航、护盾保护",
+  "rarity": "稀有",
+  "element": "草",
+  "elementImg": "cao.png",
+  "position": "辅助",
+  "positionImg": "fuzhu.png",
+  "attackType": "物攻",
+  "likeFood": "甜丝丝",
+  "likeFoodImg": "tss.png",
+  "hateFood": "酸溜溜",
+  "hateFoodImg": "sll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "小镇或庄园抚摸",
+  "mainImg": "hgz.png"
+}

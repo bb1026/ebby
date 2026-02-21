@@ -1,0 +1,19 @@
+{
+  "id": "0029",
+  "name": "鲸雷",
+  "skills": "鲸涛冲击、雷电护盾、群体麻痹",
+  "features": "控制输出、雷系干扰、群体麻痹",
+  "rarity": "稀有",
+  "element": "电",
+  "elementImg": "dian.png",
+  "position": "输出",
+  "positionImg": "shuchu.png",
+  "attackType": "法攻",
+  "likeFood": "都喜欢",
+  "likeFoodImg": "nhh.png",
+  "hateFood": "无",
+  "hateFoodImg": "wu.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "都喜欢，地图里骑一段时间",
+  "mainImg": "jl.png"
+}

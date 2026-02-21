@@ -1,0 +1,19 @@
+{
+  "id": "0069",
+  "name": "鹿啵啵",
+  "skills": "鹿啵冲击、治愈波纹、群体治疗",
+  "features": "群体治疗、草系辅助、护盾保护",
+  "rarity": "稀有",
+  "element": "草",
+  "elementImg": "cao.png",
+  "position": "辅助",
+  "positionImg": "fuzhu.png",
+  "attackType": "法攻",
+  "likeFood": "甜丝丝",
+  "likeFoodImg": "tss.png",
+  "hateFood": "酸溜溜",
+  "hateFoodImg": "sll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "喂食甜丝丝，找高处撞击艾比的头并接住鹿啵啵吐出的珍珠",
+  "mainImg": "lbb.png"
+}

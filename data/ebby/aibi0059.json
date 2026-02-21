@@ -1,0 +1,19 @@
+{
+  "id": "0059",
+  "name": "沼泽和牛",
+  "skills": "沼泽冲击、破甲之刃、暴击增幅",
+  "features": "高爆发、土系输出、破甲流",
+  "rarity": "稀有",
+  "element": "土",
+  "elementImg": "tu.png",
+  "position": "战士",
+  "positionImg": "zhanshi.png",
+  "attackType": "物攻",
+  "likeFood": "苦兮兮",
+  "likeFoodImg": "kxx.png",
+  "hateFood": "甜丝丝",
+  "hateFoodImg": "tss.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "喂食苦兮兮，风歌沙漠的沼泽地停留",
+  "mainImg": "zzhn.png"
+}

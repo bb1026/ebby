@@ -1,0 +1,19 @@
+{
+  "id": "0063",
+  "name": "花花鸭",
+  "skills": "花花冲击、破甲之刃、暴击增幅",
+  "features": "高爆发、草系输出、破甲流",
+  "rarity": "稀有",
+  "element": "草",
+  "elementImg": "cao.png",
+  "position": "战士",
+  "positionImg": "zhanshi.png",
+  "attackType": "物攻",
+  "likeFood": "甜丝丝",
+  "likeFoodImg": "tss.png",
+  "hateFood": "酸溜溜",
+  "hateFoodImg": "sll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "喂食甜丝丝，学专属技后打擂台赛",
+  "mainImg": "hhy.png"
+}

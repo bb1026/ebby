@@ -1,0 +1,19 @@
+{
+  "id": "0019",
+  "name": "迪蹦蹦",
+  "skills": "蹦跳冲击、节奏增幅、群体加速",
+  "features": "高机动、无系输出、群体加速",
+  "rarity": "稀有",
+  "element": "无",
+  "elementImg": "wu.png",
+  "position": "战士",
+  "positionImg": "zhanshi.png",
+  "attackType": "物攻",
+  "likeFood": "干巴巴",
+  "likeFoodImg": "gbb.png",
+  "hateFood": "奶呼呼",
+  "hateFoodImg": "nhh.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "蛋仔和艾比一起跳舞",
+  "mainImg": "dbb.png"
+}

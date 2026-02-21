@@ -1,0 +1,19 @@
+{
+  "id": "0074",
+  "name": "毒毒菇",
+  "skills": "毒毒冲击、毒液之刃、持续伤害",
+  "features": "持续伤害、草系输出、DOT流",
+  "rarity": "稀有",
+  "element": "草",
+  "elementImg": "cao.png",
+  "position": "输出",
+  "positionImg": "shuchu.png",
+  "attackType": "法攻",
+  "likeFood": "冰凉凉",
+  "likeFoodImg": "bll.png",
+  "hateFood": "火辣辣",
+  "hateFoodImg": "hll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "喂食冰凉凉，甜甜糖果森林地下停留获得",
+  "mainImg": "ddg.png"
+}

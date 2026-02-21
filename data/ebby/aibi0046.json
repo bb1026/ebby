@@ -1,0 +1,19 @@
+{
+  "id": "0046",
+  "name": "百特蝠",
+  "skills": "百特冲击、暗影之刃、吸血续航",
+  "features": "吸血输出、暗系续航、群体减益",
+  "rarity": "稀有",
+  "element": "暗",
+  "elementImg": "an.png",
+  "position": "输出",
+  "positionImg": "shuchu.png",
+  "attackType": "物攻",
+  "likeFood": "肉香香",
+  "likeFoodImg": "rxx.png",
+  "hateFood": "冰凉凉",
+  "hateFoodImg": "bll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "白天在小镇，艾比会睡觉，等待",
+  "mainImg": "btf.png"
+}

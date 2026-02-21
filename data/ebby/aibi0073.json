@@ -1,0 +1,19 @@
+{
+  "id": "0073",
+  "name": "蓝莓蜗",
+  "skills": "蓝莓冲击、毒液之刃、持续伤害",
+  "features": "持续伤害、草系输出、DOT流",
+  "rarity": "稀有",
+  "element": "草",
+  "elementImg": "cao.png",
+  "position": "输出",
+  "positionImg": "shuchu.png",
+  "attackType": "法攻",
+  "likeFood": "酸溜溜",
+  "likeFoodImg": "sll.png",
+  "hateFood": "甜丝丝",
+  "hateFoodImg": "tss.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "喂食酸溜溜，三只蓝莓蜗凑一起获得",
+  "mainImg": "lmw.png"
+}

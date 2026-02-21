@@ -1,0 +1,19 @@
+{
+  "id": "0081",
+  "name": "蜂堡包",
+  "skills": "蜂堡冲击、破甲之刃、暴击增幅",
+  "features": "高爆发、草系输出、破甲流",
+  "rarity": "稀有",
+  "element": "草",
+  "elementImg": "cao.png",
+  "position": "战士",
+  "positionImg": "zhanshi.png",
+  "attackType": "物攻",
+  "likeFood": "火辣辣",
+  "likeFoodImg": "hll.png",
+  "hateFood": "冰凉凉",
+  "hateFoodImg": "bll.png",
+  "getWay": "赛季盲盒、活动获取",
+  "tokenWay": "喂食火辣辣，小镇带着艾比走一会儿获得",
+  "mainImg": "fbb.png"
+}
