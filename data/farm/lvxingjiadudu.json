@@ -3,22 +3,22 @@
   "favoriteFood": [
     {
       "foodName": "麦子",
-      "image": "images/farm/maizi.png"
+      "image": "maizi.png"
     },
     {
       "foodName": "无花果",
-      "image": "images/farm/wuhuaguo.png"
+      "image": "wuhuaguo.png"
     }
   ],
   "hateFood": [
     {
       "foodName": "胡萝卜",
-      "image": "images/farm/huluobo.png"
+      "image": "huluobo.png"
     },
     {
       "foodName": "白萝卜",
-      "image": "images/farm/bailuobo.png"
+      "image": "bailuobo.png"
     }
   ],
-  "image": "images/farm/lvxingjiadudu.png"
+  "image": "lvxingjiadudu.png"
 }
