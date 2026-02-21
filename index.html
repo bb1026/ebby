@@ -182,7 +182,7 @@
 <div class="container">
     <div class="search-box">
         <h1>蛋仔派对艾比查询</h1>
-        <div class="total-count" id="total-count">已收录艾比：0 个</div>
+        <div class="total-count" id="total-count">本信息由纪星宇辛苦制作<br>已收录艾比：0 个</div>
         <div class="search-inputs">
             <input type="text" id="search-id" placeholder="输入序号（如0001）">
             <input type="text" id="search-name" placeholder="输入名称（如兔萝萝）">
@@ -229,7 +229,7 @@ window.onload = async function () {
 
         const loadedData = await Promise.all(loadPromises);
         allAibiData = loadedData.filter(item => item !== null);
-        document.getElementById('total-count').textContent = `已收录艾比：${allAibiData.length} 个`;
+        document.getElementById('total-count').innerHTML = `本信息由纪星宇辛苦制作<br>已收录艾比：${allAibiData.length} 个`;
         renderAibiList(allAibiData);
     } catch (error) {
         document.getElementById('result-container').innerHTML = `<div class="error">数据加载失败</div>`;
