@@ -19,25 +19,32 @@
             max-width: 100%;
             margin: 0 auto;
         }
+
+        .search-box-wrapper {
+            transition: opacity 0.25s ease;
+            opacity: 1;
+            pointer-events: auto;
+        }
+
         .search-box {
             background: white;
             padding: 15px;
             border-radius: 12px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             margin-bottom: 15px;
-            position: relative; /* 为右上角链接提供定位 */
+            position: relative;
         }
-        /* 新增：农场图鉴链接样式 */
         .farm-link {
             position: absolute;
             top: 15px;
-            right: 15px;
+            left: 15px;
             padding: 6px 12px;
             background-color: #4285f4;
             color: white;
             border-radius: 8px;
             text-decoration: none;
             font-size: 13px;
+            z-index: 2;
         }
         .farm-link:hover {
             background-color: #3367d6;
@@ -66,6 +73,19 @@
             width: 100%;
             font-size: 15px;
         }
+        .filter-btn {
+            padding: 12px;
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .filter-btn:hover {
+            background-color: #3367d6;
+        }
         .search-inputs button {
             padding: 12px;
             background-color: #ff6767;
@@ -78,6 +98,159 @@
         .search-inputs button:hover {
             background-color: #ff4545;
         }
+
+        .float-search-btn {
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #ff6767;
+            color: white;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            z-index: 100;
+            cursor: move;
+            right: 20px;
+            top: 20px;
+            display: none;
+            user-select: none;
+        }
+
+        .float-search-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 999;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .float-search-box {
+            background: white;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        .float-search-close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            color: #666;
+        }
+        .float-search-box h2 {
+            text-align: center;
+            color: #ff6767;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .float-search-inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .float-search-inputs input {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 100%;
+            font-size: 15px;
+        }
+        .float-filter-btn {
+            padding: 12px;
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .float-search-inputs button {
+            padding: 12px;
+            background-color: #ff6767;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .modal-mask {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 999;
+            display: none;
+            align-items: flex-end;
+        }
+        .modal-box {
+            background: #fff;
+            border-radius: 12px 12px 0 0;
+            padding: 20px 15px;
+            max-height: 80vh;
+            overflow-y: auto;
+            width: 100%;
+        }
+        .modal-section {
+            margin-bottom: 20px;
+        }
+        .modal-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: #333;
+        }
+        .modal-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .modal-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 6px 4px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .modal-item.active {
+            border-color: #ff6767;
+            background: transparent;
+        }
+        .modal-item img {
+            width: 60px;
+            height: 36px;
+            object-fit: contain;
+        }
+        .modal-btns {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .modal-btns button {
+            flex: 1;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            font-size: 15px;
+        }
+        .btn-reset { background: #cccccc; color: #333; }
+        .btn-cancel { background: #999999; color: #fff; }
+        .btn-confirm { background: #ff6767; color: #fff; }
+
         .result-list {
             display: grid;
             grid-template-columns: 1fr;
@@ -89,7 +262,6 @@
             padding: 15px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-        /* 艾比主图缩小尺寸 */
         .aibi-card img.main-img {
             width: 120px;
             height: 120px;
@@ -130,17 +302,15 @@
             flex-direction: column;
             align-items: center;
         }
-        /* 超能图标和定位图标（102×30）适配 */
         .aibi-card .img-group .icon-img img {
-            width: 102px;
+            width: 80px;
             height: 30px;
             object-fit: contain;
             border-radius: 6px;
         }
-        /* 零食图片（100×120）适配 */
         .aibi-card .img-group .food-img img {
-            width: 100px;
-            height: 120px;
+            width: 70px;
+            height: 70px;
             object-fit: cover;
             border-radius: 6px;
         }
@@ -176,39 +346,74 @@
         }
 
         @media (min-width: 500px) {
-            .result-list {
-                grid-template-columns: repeat(2, 1fr);
-            }
+            .result-list { grid-template-columns: repeat(2, 1fr); }
             .search-inputs {
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: center;
             }
-            .search-inputs input {
+            .search-inputs input, .filter-btn {
                 flex: 1;
-                min-width: 140px;
+                min-width: 120px;
             }
             .search-inputs button {
                 min-width: 100px;
             }
+            .modal-grid { grid-template-columns: repeat(5, 1fr); }
         }
     </style>
 </head>
 <body>
+
 <div class="container">
-    <div class="search-box">
-        <!-- 新增：右上角农场图鉴链接 -->
-        <a href="eggy_party_farm.html" class="farm-link">农场图鉴</a>
-        <h1>蛋仔派对艾比查询</h1>
-        <div class="total-count" id="total-count">本信息由纪星宇辛苦制作<br>已收录艾比：0 个</div>
-        <div class="search-inputs">
-            <input type="text" id="search-id" placeholder="输入序号（如0001）">
-            <input type="text" id="search-name" placeholder="输入名称（如兔萝萝）">
-            <input type="text" id="search-food" placeholder="输入喜爱食物">
-            <input type="text" id="search-element" placeholder="输入元素系别">
-            <input type="text" id="search-attack-type" placeholder="输入攻击类型（物攻/法攻）">
-            <button onclick="searchAibi()">搜索</button>
-            <button onclick="resetSearch()">重置</button>
+    <div class="search-box-wrapper" id="searchWrap">
+        <div class="search-box">
+            <a href="eggy_party_farm.html" class="farm-link">农场图鉴</a>
+            <h1>蛋仔派对艾比查询</h1>
+            <div class="total-count" id="total-count">本信息由纪星宇辛苦制作<br>已收录艾比：0 个</div>
+            <div class="search-inputs">
+                <input type="text" id="search-id" placeholder="输入序号（如0001）">
+                <input type="text" id="search-name" placeholder="输入名称（如兔萝萝）">
+                <input type="text" id="search-food" placeholder="输入喜爱食物">
+                <div class="filter-btn" id="filter-btn" onclick="openFilterModal()">筛选 (属性/定位)</div>
+                <button onclick="searchAibi()">搜索</button>
+                <button onclick="resetSearch()">重置</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="float-search-btn" id="floatBtn">搜</div>
+
+    <div class="float-search-modal" id="floatSearchModal" onclick="closeFloatSearch()">
+        <div class="float-search-box" onclick="event.stopPropagation()">
+            <div class="float-search-close" onclick="closeFloatSearch()">×</div>
+            <h2>艾比查询</h2>
+            <div class="float-search-inputs">
+                <input type="text" id="float-search-id" placeholder="输入序号（如0001）">
+                <input type="text" id="float-search-name" placeholder="输入名称（如兔萝萝）">
+                <input type="text" id="float-search-food" placeholder="输入喜爱食物">
+                <div class="float-filter-btn" id="float-filter-btn" onclick="openFilterModal()">筛选 (属性/定位)</div>
+                <button onclick="floatSearchAibi()">搜索</button>
+                <button onclick="floatResetSearch()">重置</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-mask" id="modal-mask" onclick="closeModal()">
+        <div class="modal-box" onclick="event.stopPropagation()">
+            <div class="modal-section">
+                <div class="modal-title">属性筛选</div>
+                <div class="modal-grid" id="attr-grid"></div>
+            </div>
+            <div class="modal-section">
+                <div class="modal-title">定位筛选</div>
+                <div class="modal-grid" id="pos-grid"></div>
+            </div>
+            <div class="modal-btns">
+                <button class="btn-reset" onclick="resetFilter()">重置筛选</button>
+                <button class="btn-cancel" onclick="closeModal()">取消</button>
+                <button class="btn-confirm" onclick="confirmFilter()">确定</button>
+            </div>
         </div>
     </div>
 
@@ -222,104 +427,175 @@ let allAibiData = [];
 const scanStart = 1;
 const scanEnd = 100;
 
+let selectedAttr = '';
+let selectedPos = '';
+
+const attrList = [
+    { name: '暗', img: 'an.png' },{ name: '草', img: 'cao.png' },{ name: '超能', img: 'chaoneng.png' },
+    { name: '电', img: 'dian.png' },{ name: '光', img: 'guang.png' },{ name: '火', img: 'huo.png' },
+    { name: '龙', img: 'long.png' },{ name: '普通', img: 'putong.png' },{ name: '水', img: 'shui.png' },
+    { name: '岩', img: 'yan.png' }
+];
+const posList = [
+    { name: '刺客', img: 'cike.png' },{ name: '辅助', img: 'fuzhu.png' },{ name: '射手', img: 'sheshou.png' },
+    { name: '守卫', img: 'shouwei.png' },{ name: '输出', img: 'shuchu.png' },{ name: '战士', img: 'zhanshi.png' }
+];
+
+const floatBtn = document.getElementById('floatBtn');
+const searchWrap = document.getElementById('searchWrap');
+const floatSearchModal = document.getElementById('floatSearchModal');
+let isDrag = false;
+let startX, startY, origLeft, origTop;
+
+floatBtn.addEventListener('mousedown', e => {
+    isDrag = true;
+    startX = e.clientX; startY = e.clientY;
+    origLeft = floatBtn.offsetLeft; origTop = floatBtn.offsetTop;
+    floatBtn.style.transition = 'none';
+});
+document.addEventListener('mousemove', e => {
+    if (!isDrag) return;
+    let dx = e.clientX - startX, dy = e.clientY - startY;
+    let x = origLeft + dx, y = origTop + dy;
+    x = Math.max(0, Math.min(x, window.innerWidth - 50));
+    y = Math.max(0, Math.min(y, window.innerHeight - 50));
+    floatBtn.style.left = x + 'px'; floatBtn.style.top = y + 'px';
+});
+document.addEventListener('mouseup', () => { isDrag = false; floatBtn.style.transition = 'all 0.3s'; });
+
+function updateSearchVisibility() {
+    if (!searchWrap) return;
+    const rect = searchWrap.getBoundingClientRect();
+    const searchBoxHeight = rect.height;
+    const threshold = searchBoxHeight * 0.3;
+
+    if (rect.bottom > threshold) {
+        searchWrap.style.opacity = '1';
+        searchWrap.style.pointerEvents = 'auto';
+        floatBtn.style.display = 'none';
+    } else {
+        searchWrap.style.opacity = '0';
+        searchWrap.style.pointerEvents = 'none';
+        floatBtn.style.display = 'flex';
+    }
+}
+
+window.addEventListener('scroll', () => {
+    updateSearchVisibility();
+});
+
+window.addEventListener('resize', () => {
+    updateSearchVisibility();
+});
+
+floatBtn.addEventListener('click', () => {
+    floatSearchModal.style.display = 'flex';
+    syncAll();
+});
+
+function closeFloatSearch() {
+    floatSearchModal.style.display = 'none';
+}
+
+function syncFloatInputs() {
+    document.getElementById('float-search-id').value = document.getElementById('search-id').value;
+    document.getElementById('float-search-name').value = document.getElementById('search-name').value;
+    document.getElementById('float-search-food').value = document.getElementById('search-food').value;
+}
+
+function syncTopInputs() {
+    document.getElementById('search-id').value = document.getElementById('float-search-id').value;
+    document.getElementById('search-name').value = document.getElementById('float-search-name').value;
+    document.getElementById('search-food').value = document.getElementById('float-search-food').value;
+}
+
+function updateFilterBtnText() {
+    const btn = document.getElementById('filter-btn');
+    const floatBtn = document.getElementById('float-filter-btn');
+    let parts = [];
+    if (selectedAttr) parts.push(selectedAttr);
+    if (selectedPos) parts.push(selectedPos);
+    const text = parts.length ? parts.join(' / ') : '筛选 (属性/定位)';
+    btn.innerText = text;
+    floatBtn.innerText = text;
+}
+
+function syncAll() {
+    syncFloatInputs();
+    updateFilterBtnText();
+}
+
+function floatSearchAibi() {
+    syncTopInputs();
+    searchAibi();
+    closeFloatSearch();
+}
+
+function floatResetSearch() {
+    resetSearch();
+    syncAll();
+}
+
 function formatId(num) {
     return num.toString().padStart(4, '0');
 }
 
-window.onload = async function () {
-    try {
-        const scanIds = [];
-        for (let i = scanStart; i <= scanEnd; i++) {
-            scanIds.push(formatId(i));
-        }
+function openFilterModal() {
+    renderGrid('attr-grid', attrList, selectedAttr);
+    renderGrid('pos-grid', posList, selectedPos);
+    document.getElementById('modal-mask').style.display = 'flex';
+}
 
-        const loadPromises = scanIds.map(async (id) => {
-            try {
-                // 修复JSON路径
-                const res = await fetch(`data/ebby/aibi${id}.json`);
-                if (!res.ok) return null;
-                const data = await res.json();
-                return data;
-            } catch {
-                return null;
-            }
-        });
-
-        const loadedData = await Promise.all(loadPromises);
-        allAibiData = loadedData.filter(item => item !== null);
-        document.getElementById('total-count').innerHTML = `本信息由纪星宇辛苦制作<br>已收录艾比：${allAibiData.length} 个`;
-        renderAibiList(allAibiData);
-    } catch (error) {
-        document.getElementById('result-container').innerHTML = `<div class="error">数据加载失败</div>`;
-    }
-};
-
-function renderAibiList(data) {
-    const container = document.getElementById('result-container');
-    if (data.length === 0) {
-        container.innerHTML = '<div class="no-result">未找到匹配的艾比</div>';
-        return;
-    }
-
-    let html = '';
-    data.forEach(aibi => {
-        // 所有图片路径直接在这里拼接，不写在JSON里
-        const mainImg = `images/ebby/${aibi.mainImg}`;
-        const elementImg = `images/shuxing/${aibi.elementImg}`;
-        const positionImg = `images/dingwei/${aibi.positionImg}`;
-        const likeFoodImg = `images/lingshi/${aibi.likeFoodImg}`;
-        const hateFoodImg = `images/lingshi/${aibi.hateFoodImg}`;
-
-        html += `
-        <div class="aibi-card">
-            <img src="${mainImg}" alt="${aibi.name}" class="main-img">
-            <h2>${aibi.name} <span>序号：${aibi.id}</span></h2>
-
-            <div class="info-item"><strong>稀有度：</strong>${aibi.rarity}</div>
-            <div class="info-item"><strong>攻击类型：</strong>${aibi.attackType || '未知'}</div>
-            <div class="info-item"><strong>技能：</strong>${aibi.skills}</div>
-            <div class="info-item"><strong>特点：</strong>${aibi.features}</div>
-
-            <div class="img-group">
-                <div class="img-item icon-img">
-                    <img src="${elementImg}" alt="${aibi.element}">
-                    <p>${aibi.element}系</p>
-                </div>
-                <div class="img-item icon-img">
-                    <img src="${positionImg}" alt="${aibi.position}">
-                    <p>${aibi.position}</p>
-                </div>
-                <div class="img-item food-img">
-                    <img src="${likeFoodImg}" alt="喜欢">
-                    <p>喜：${aibi.likeFood}</p>
-                </div>
-                <div class="img-item food-img">
-                    <img src="${hateFoodImg}" alt="讨厌">
-                    <p>厌：${aibi.hateFood}</p>
-                </div>
-            </div>
-
-            <div class="info-item"><strong>获取方式：</strong>${aibi.getWay}</div>
-            ${aibi.tokenWay ? `<div class="info-item"><strong>羁绊信物：</strong>${aibi.tokenWay}</div>` : ''}
-        </div>`;
+function renderGrid(gridId, list, selectedValue) {
+    const grid = document.getElementById(gridId);
+    grid.innerHTML = '';
+    list.forEach(item => {
+        const div = document.createElement('div');
+        div.className = `modal-item ${item.name === selectedValue ? 'active' : ''}`;
+        div.dataset.name = item.name;
+        div.innerHTML = `<img src="images/${gridId === 'attr-grid' ? 'shuxing' : 'dingwei'}/${item.img}" alt="${item.name}">`;
+        div.onclick = () => {
+            const isActive = div.classList.contains('active');
+            grid.querySelectorAll('.modal-item').forEach(i => i.classList.remove('active'));
+            if (!isActive) div.classList.add('active');
+        };
+        grid.appendChild(div);
     });
+}
 
-    container.innerHTML = html;
+function resetFilter() {
+    selectedAttr = '';
+    selectedPos = '';
+    document.querySelectorAll('.modal-item').forEach(i => i.classList.remove('active'));
+    updateFilterBtnText();
+}
+
+function closeModal() {
+    document.getElementById('modal-mask').style.display = 'none';
+}
+
+function confirmFilter() {
+    const activeAttr = document.querySelector('#attr-grid .modal-item.active');
+    selectedAttr = activeAttr ? activeAttr.dataset.name : '';
+    const activePos = document.querySelector('#pos-grid .modal-item.active');
+    selectedPos = activePos ? activePos.dataset.name : '';
+    closeModal();
+    updateFilterBtnText();
+    searchAibi();
+    closeFloatSearch();
 }
 
 function searchAibi() {
     const searchId = document.getElementById('search-id').value.trim().toLowerCase();
     const searchName = document.getElementById('search-name').value.trim().toLowerCase();
     const searchFood = document.getElementById('search-food').value.trim().toLowerCase();
-    const searchElement = document.getElementById('search-element').value.trim().toLowerCase();
-    const searchAttackType = document.getElementById('search-attack-type').value.trim().toLowerCase();
-
     const filtered = allAibiData.filter(a => {
-        return (searchId === '' || a.id.includes(searchId))
-            && (searchName === '' || a.name.toLowerCase().includes(searchName))
-            && (searchFood === '' || a.likeFood.toLowerCase().includes(searchFood))
-            && (searchElement === '' || a.element.toLowerCase().includes(searchElement))
-            && (searchAttackType === '' || (a.attackType && a.attackType.toLowerCase().includes(searchAttackType)));
+        const matchId = !searchId || a.id.includes(searchId);
+        const matchName = !searchName || a.name.toLowerCase().includes(searchName);
+        const matchFood = !searchFood || a.likeFood.toLowerCase().includes(searchFood);
+        const matchAttr = !selectedAttr || a.element === selectedAttr;
+        const matchPos = !selectedPos || a.position === selectedPos;
+        return matchId && matchName && matchFood && matchAttr && matchPos;
     });
     renderAibiList(filtered);
 }
@@ -328,10 +604,83 @@ function resetSearch() {
     document.getElementById('search-id').value = '';
     document.getElementById('search-name').value = '';
     document.getElementById('search-food').value = '';
-    document.getElementById('search-element').value = '';
-    document.getElementById('search-attack-type').value = '';
+    selectedAttr = '';
+    selectedPos = '';
+    updateFilterBtnText();
     renderAibiList(allAibiData);
 }
+
+window.onload = async function () {
+    try {
+        const scanIds = [];
+        for (let i = scanStart; i <= scanEnd; i++) scanIds.push(formatId(i));
+        const loadPromises = scanIds.map(async (id) => {
+            try {
+                const res = await fetch(`data/ebby/aibi${id}.json`);
+                if (!res.ok) return null;
+                return await res.json();
+            } catch { return null }
+        });
+        const loadedData = await Promise.all(loadPromises);
+        allAibiData = loadedData.filter(Boolean);
+        document.getElementById('total-count').innerHTML = `本信息由纪星宇辛苦制作<br>已收录艾比：${allAibiData.length} 个`;
+        renderAibiList(allAibiData);
+        updateFilterBtnText();
+        updateSearchVisibility();
+    } catch (e) {
+        document.getElementById('result-container').innerHTML = `<div class="error">数据加载失败</div>`;
+        updateSearchVisibility();
+    }
+};
+
+function renderAibiList(data) {
+    const container = document.getElementById('result-container');
+    if (!data.length) {
+        container.innerHTML = '<div class="no-result">未找到匹配的艾比</div>';
+        return;
+    }
+    let html = '';
+    data.forEach(aibi => {
+        const mainImg = `images/ebby/${aibi.mainImg}`;
+        const elementImg = `images/shuxing/${aibi.elementImg}`;
+        const positionImg = `images/dingwei/${aibi.positionImg}`;
+        const likeFoodImg = `images/lingshi/${aibi.likeFoodImg}`;
+        const hateFoodImg = `images/lingshi/${aibi.hateFoodImg}`;
+        html += `
+        <div class="aibi-card">
+            <img src="${mainImg}" alt="${aibi.name}" class="main-img">
+            <h2>${aibi.name} <span>序号：${aibi.id}</span></h2>
+            <div class="info-item"><strong>稀有度：</strong>${aibi.rarity}</div>
+            <div class="info-item"><strong>攻击类型：</strong>${aibi.attackType || '未知'}</div>
+            <div class="info-item"><strong>技能：</strong>${aibi.skills}</div>
+            <div class="info-item"><strong>特点：</strong>${aibi.features}</div>
+            <div class="img-group">
+                <div class="img-item icon-img"><img src="${elementImg}"><p>${aibi.element}系</p></div>
+                <div class="img-item icon-img"><img src="${positionImg}"><p>${aibi.position}</p></div>
+                <div class="img-item food-img"><img src="${likeFoodImg}"><p>喜：${aibi.likeFood}</p></div>
+                <div class="img-item food-img"><img src="${hateFoodImg}"><p>厌：${aibi.hateFood}</p></div>
+            </div>
+            <div class="info-item"><strong>获取方式：</strong>${aibi.getWay}</div>
+            ${aibi.tokenWay ? `<div class="info-item"><strong>羁绊信物：</strong>${aibi.tokenWay}</div>` : ''}
+        </div>`;
+    });
+    container.innerHTML = html;
+}
+
+const originalSearch = searchAibi;
+searchAibi = function() {
+    originalSearch();
+    setTimeout(updateSearchVisibility, 50);
+}
+
+const originalReset = resetSearch;
+resetSearch = function() {
+    originalReset();
+    setTimeout(updateSearchVisibility, 50);
+}
+
+window.searchAibi = searchAibi;
+window.resetSearch = resetSearch;
 </script>
 </body>
 </html>
