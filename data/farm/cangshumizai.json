@@ -3,18 +3,18 @@
   "favoriteFood": [
     {
       "foodName": "麦子",
-      "image": "images/farm/maizi.png"
+      "image": "maizi.png"
     },
     {
       "foodName": "玉米",
-      "image": "images/farm/yumi.png"
+      "image": "yumi.png"
     }
   ],
   "hateFood": [
     {
       "foodName": "葱",
-      "image": "images/farm/cong.png"
+      "image": "cong.png"
     }
   ],
-  "image": "images/farm/cangshumizai.png"
+  "image": "cangshumizai.png"
 }
