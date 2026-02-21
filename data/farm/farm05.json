@@ -1,0 +1,1 @@
+{\n  "name": "淘气丸子",\n  "favoriteFood": [\n    {\n      "foodName": "土豆",\n      "image": "tudou.png"\n    },\n    {\n      "foodName": "蘑菇",\n      "image": "mogu.png"\n    },\n    {\n      "foodName": "洋葱",\n      "image": "yangcong.png"\n    }\n  ],\n  "hateFood": [\n    {\n      "foodName": "鸡枞菇",\n      "image": "jizonggu.png"\n    }\n  ],\n  "image": "taoqiwanzi.png"\n}
