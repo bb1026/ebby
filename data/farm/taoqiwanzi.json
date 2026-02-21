@@ -1,0 +1,24 @@
+{
+  "name": "淘气丸子",
+  "favoriteFood": [
+    {
+      "foodName": "土豆",
+      "image": "images/farm/tudou.png"
+    },
+    {
+      "foodName": "蘑菇",
+      "image": "images/farm/mogu.png"
+    },
+    {
+      "foodName": "洋葱",
+      "image": "images/farm/yangcong.png"
+    }
+  ],
+  "hateFood": [
+    {
+      "foodName": "鸡枞菇",
+      "image": "images/farm/jizonggu.png"
+    }
+  ],
+  "image": "images/farm/taoqiwanzi.png"
+}

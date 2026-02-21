@@ -1,0 +1,14 @@
+{
+  "name": "汪伦",
+  "favoriteFood": [
+    {
+      "foodName": "甜椒",
+      "image": "images/farm/tianjiao.png"
+    },
+    {
+      "foodName": "红辣椒",
+      "image": "images/farm/honglajiao.png"
+    }
+  ],
+  "image": "images/farm/wanglun.png"
+}

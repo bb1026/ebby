@@ -1,0 +1,19 @@
+{
+  "name": "失心熊",
+  "favoriteFood": [
+    {
+      "foodName": "苹果",
+      "image": "images/farm/pingguo.png"
+    },
+    {
+      "foodName": "哈密瓜",
+      "image": "images/farm/hamigua.png"
+    },
+    {
+      "foodName": "阳光玫瑰",
+      "image": "images/farm/yangguangmeigui.png"
+    }
+  ],
+  "hateFood": [],
+  "image": "images/farm/zaizaixiong.png"
+}

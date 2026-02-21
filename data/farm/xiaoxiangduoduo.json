@@ -1,0 +1,20 @@
+{
+  "name": "小象哆哆",
+  "favoriteFood": [
+    {
+      "foodName": "石榴",
+      "image": "images/farm/shiliu.png"
+    }
+  ],
+  "hateFood": [
+    {
+      "foodName": "红辣椒",
+      "image": "images/farm/honglajiao.png"
+    },
+	 {
+      "foodName": "甜椒",
+      "image": "images/farm/tianjiao.png"
+    }
+  ],
+  "image": "images/farm/xiaoxiangduoduo.png"
+}
